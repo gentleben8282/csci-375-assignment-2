@@ -6,7 +6,7 @@
  * @returns {string[]} solutions - Possible solutions to the Boggle board.
  * 
  * Programmer (Student ID): Ben Corriette (@02956064)
- * Last modified date: 10/14/2021
+ * Last modified date: 10/15/2021
  * 
  * Reference: https://bobbyhadz.com/blog/javascript-includes-case-insensitive
  */
@@ -256,8 +256,8 @@ function checkWordCandidate(wordCCToCheck, i, j, peekDir, grid, dictionary) {
      }
    }
 }
-/*let grid = [['A', 'B'],
+let grid = [['A', 'B'],
             ['C', 'D']];
 let dictionary = ['AB','ABD','DCA','XY'];
 
-console.log(exports.findAllSolutions(grid, dictionary));*/
+console.log(exports.findAllSolutions(grid, dictionary));

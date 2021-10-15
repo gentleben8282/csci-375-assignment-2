@@ -103,8 +103,8 @@ describe('Boggle Solver test suite:', () => {
                   ['B',	'C',	'V',	'T']];
       let dictionary = ['bock','cfos','faqs','sock','stock','quack','jack','adj','afc','cad','caf',
                         'cbf','cbo','cda','cfo','fad','fos','nfc','soc','cos'];
-      let expected = ['bock','cfos','faqs','sock','stock','quack','jack','adj','afc','cad','caf',
-                        'cbf','cbo','cda','cfo','fad','fos','nfc','soc','cos'];
+      let expected = ['bock','stock','quack','jack','adj','afc','cad','caf',
+                        'cbf','cbo','cda','cfo','fad','nfc'];
       
       let solutions = boggle_solver.findAllSolutions(grid, dictionary);
       
@@ -139,8 +139,7 @@ describe('Boggle Solver test suite:', () => {
                   ['O',	'F',	'K',	'G']];
       let dictionary = ['cfos','faqs','jack','adj','afc','cad','caf','cda','cfo',
                         'fad','fos','nfc'];
-      let expected = ['cfos','faqs','jack','adj','afc','cad','caf','cda','cfo',
-                        'fad','fos','nfc'];
+      let expected = ['faqs','adj','fad','fos'];
 
       let solutions = boggle_solver.findAllSolutions(grid, dictionary);
       
@@ -152,8 +151,8 @@ describe('Boggle Solver test suite:', () => {
     test('Undersized grid (2x2)', () => {
       let grid = [['N',	'F'],
                   ['S',	'A']];
-      let dictionary = ['fan','fans'];
-      let expected = [];
+      let dictionary = ['fan','fans','as'];
+      let expected = ['fan','fans'];
 
       let solutions = boggle_solver.findAllSolutions(grid, dictionary);
       
